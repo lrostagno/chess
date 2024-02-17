@@ -5,8 +5,9 @@ class Board:
         self.board = [['']*8 for _ in range(8)] 
         print('test')
         print(self.board)
-        self.init_board()
-        self.get_board_dict()
+        #self.init_board()
+        #self.get_board_dict()
+        
 
     def init_board(self):
         self.board[0] = [Rook(0, 0, 'b'), Knight(1, 0, 'b'), Bishop(2, 0, 'b'), Queen(3, 0, 'b'), King(4, 0, 'b'), Bishop(5, 0, 'b'), Knight(6, 0, 'b'), Rook(7, 0, 'b')]

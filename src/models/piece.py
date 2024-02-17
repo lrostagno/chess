@@ -12,6 +12,7 @@ class Pawn(Piece):
         return f'{self.color}p'
 
     def get_moves(self):
+        pass
         
 
 class Rook(Piece):
