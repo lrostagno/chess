@@ -35,3 +35,12 @@ class Board:
         for r, num in enumerate(reversed(numbers)):
             for c, col in enumerate(columns):
                 self.board_dict[col + num] = (r, c)
+
+
+    def get_piece(self, square):
+        row, col = self.board_dict[square]
+        return self.board[row][col]
+
+
+    def check_pawn_moves(self):
+        pass

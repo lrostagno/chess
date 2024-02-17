@@ -1,24 +1,18 @@
 class Piece:
-    def __init__(self, x=0, y=0, color='w'):
-        self.x = x
-        self.y = y
+    def __init__(self, color='w'):
         self.color = color
-
-    def move(self, x, y):
-        self.x = x
-        self.y = y
 
     def get_possible_moves(self):
         pass
-
-    def take(self, x, y):
-        self.move(x, y)
 
     
 
 class Pawn(Piece):
     def __repr__(self):
         return f'{self.color}p'
+
+    def get_moves(self):
+        
 
 class Rook(Piece):
     def __repr__(self):

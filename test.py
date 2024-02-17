@@ -8,5 +8,13 @@ board = Board()
 # %%
 board.board
 # %%
-board.move_piece('a2', 'a3')
+piece = board.get_piece('e2')
+# %%
+board
+# %%
+board.board
+# %%
+inverted_chess_board = board.board[::-1]
+# %%
+inverted_chess_board
 # %%
